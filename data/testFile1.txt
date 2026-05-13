@@ -1,0 +1,181 @@
+========================================
+ACME CORPORATION INTERNAL EMPLOYEE GUIDE
+Version 3.2 — Updated January 2026
+========================================
+
+SECTION 1 — WORKING HOURS
+
+Employees are expected to work 40 hours per week. Standard working hours are from 9:00 AM to 5:00 PM, Monday through Friday.
+
+Flexible scheduling is available for employees who have completed their probation period. Employees may begin work between 7:00 AM and 11:00 AM as long as they complete their required daily hours.
+
+Remote employees must remain available on Slack during core collaboration hours between 11:00 AM and 3:00 PM CET.
+
+Overtime must be approved by a direct manager before being performed. Unauthorized overtime may not be compensated.
+
+----------------------------------------
+
+SECTION 2 — VACATION POLICY
+
+Full-time employees receive 26 paid vacation days per calendar year.
+
+Employees who have worked at the company for less than 12 months receive vacation days proportionally based on their start date.
+
+Unused vacation days may be carried over into the next year, but they must be used before March 31st.
+
+Vacation requests longer than 10 consecutive business days require approval from both the direct manager and HR.
+
+During the final two weeks of December, no more than 30% of a department may be on vacation simultaneously.
+
+----------------------------------------
+
+SECTION 3 — SICK LEAVE
+
+Employees must notify their manager before 10:00 AM on the first day of absence.
+
+A medical certificate is required for sick leave longer than 3 consecutive days.
+
+Employees on sick leave are not expected to respond to emails or attend meetings.
+
+The company provides up to 30 paid sick leave days annually.
+
+----------------------------------------
+
+SECTION 4 — TRAVEL REIMBURSEMENT
+
+Business travel must be booked through the corporate travel portal.
+
+Hotel reimbursement is limited to:
+- 600 PLN per night inside Poland
+- 180 EUR per night within the European Union
+- 250 USD per night outside the European Union
+
+Meal reimbursements:
+- Breakfast: 40 PLN
+- Lunch: 70 PLN
+- Dinner: 90 PLN
+
+Taxi reimbursement requires a digital receipt.
+
+First-class flights are not reimbursed unless approved by a department director.
+
+----------------------------------------
+
+SECTION 5 — SECURITY POLICY
+
+Employees must use multi-factor authentication (MFA) for all company systems.
+
+Passwords must:
+- contain at least 14 characters
+- include uppercase and lowercase letters
+- include at least one number
+- include at least one special character
+
+Sharing credentials with another employee is strictly prohibited.
+
+External USB devices may not be connected to company laptops without approval from IT Security.
+
+Employees must lock their workstation when leaving their desk.
+
+----------------------------------------
+
+SECTION 6 — SOFTWARE DEVELOPMENT GUIDELINES
+
+All backend services must expose REST APIs documented using OpenAPI specifications.
+
+Python services should follow async-first design principles where appropriate.
+
+Production services must include:
+- structured logging
+- centralized error handling
+- health check endpoints
+- request tracing
+- retry policies for external API calls
+
+Pull requests require at least one approving reviewer before merging.
+
+Direct commits to the main branch are prohibited.
+
+----------------------------------------
+
+SECTION 7 — AI SYSTEMS POLICY
+
+Employees developing AI systems must document:
+- model provider
+- prompt templates
+- tool definitions
+- evaluation metrics
+- fallback mechanisms
+
+Retrieval-Augmented Generation (RAG) systems should:
+- use chunk overlap between 10% and 20%
+- store embeddings in approved vector databases
+- validate retrieved context before generation
+- log retrieval failures
+
+AI agents with tool access must not:
+- execute shell commands
+- access production credentials
+- send external emails without approval
+
+All AI-generated customer responses must include confidence scoring metadata.
+
+----------------------------------------
+
+SECTION 8 — INCIDENT RESPONSE
+
+Security incidents must be reported within 15 minutes of discovery.
+
+Critical incidents are classified as:
+- data leaks
+- credential compromise
+- ransomware detection
+- unauthorized production access
+
+Incident severity levels:
+- SEV-1: Full outage or major breach
+- SEV-2: Partial degradation
+- SEV-3: Minor issue with workaround
+
+SEV-1 incidents require executive notification within 30 minutes.
+
+----------------------------------------
+
+SECTION 9 — PERFORMANCE REVIEW PROCESS
+
+Performance reviews occur twice per year:
+- June
+- December
+
+Evaluation categories include:
+- technical execution
+- collaboration
+- communication
+- ownership
+- innovation
+
+Employees scoring “Exceptional” for two consecutive review cycles become eligible for accelerated promotion review.
+
+Managers must submit written evaluations no later than 7 business days before review meetings.
+
+----------------------------------------
+
+SECTION 10 — EQUIPMENT POLICY
+
+Employees receive:
+- one company laptop
+- one external monitor
+- one keyboard
+- one mouse
+
+Replacement cycle:
+- laptops every 3 years
+- monitors every 5 years
+
+Lost equipment must be reported immediately.
+
+Intentional damage to company equipment may result in disciplinary action.
+
+========================================
+END OF DOCUMENT
+========================================

@@ -10,7 +10,7 @@ CREATE TABLE document (
 CREATE TABLE document_chunk (
     id          bigserial PRIMARY KEY,
     content     text NOT NULL,
-    embedding   vector(1536),
+    embedding   vector(768),
     metadata    jsonb NOT NULL DEFAULT '{}'::jsonb,
     document_id bigint NOT NULL REFERENCES document (id) ON DELETE CASCADE
 );

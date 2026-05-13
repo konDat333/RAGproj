@@ -12,7 +12,7 @@ from __future__ import annotations
 import csv
 import json
 import re
-from dataclasses import dataclass, field
+from services.pydanticModels.TextChunk import TextChunk
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
@@ -252,13 +252,6 @@ def extract_text(path: str | Path) -> tuple[str, dict[str, Any]]:
 
     return _normalize_ws(text), meta
 
-
-@dataclass
-class TextChunk:
-    """Один чанк для последующего эмбеддинга."""
-
-    text: str
-    metadata: dict[str, Any] = field(default_factory=dict)
 
 
 def _split_oversized_piece(text: str, max_chars: int, overlap: int) -> list[str]:
